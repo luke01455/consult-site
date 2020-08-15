@@ -19,12 +19,12 @@ const ClientsSection = () => {
                 </div>
                 <div className='half-client-cards'>
                     <div className='quarter-client-cards'>
-                        <ClientCard clientName='Komplett Bank' imgSrc='mutti'/>
-                        <ClientCard clientName='Mutti' imgSrc='snellman-logo'/>
+                        <ClientCard clientName='Mutti' imgSrc='mutti'/>
+                        <ClientCard clientName='Snellman' imgSrc='snellman-logo'/>
                     </div>
                     <div className='quarter-client-cards'>
-                        <ClientCard clientName='Snellman' imgSrc='unilever-logo'/>
-                        <ClientCard clientName='Unilever' imgSrc='alma-logo'/>
+                        <ClientCard clientName='Unilever' imgSrc='unilever-logo'/>
+                        <ClientCard clientName='Komplett Bank' imgSrc='komplett-logo'/>
                     </div>
                 </div>
             </div>

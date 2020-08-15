@@ -1,0 +1,17 @@
+.blog-item {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 650px;
+
+    .blog-img {
+        display: block;
+        max-height: fill-available;
+        max-width: 75%;
+        max-height: 75%;
+    }
+}
+

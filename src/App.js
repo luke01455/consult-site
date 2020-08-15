@@ -4,7 +4,9 @@ import LandingPage from '../src/components/landing-page/landing-page.component'
 import ServicesSection from '../src/components/services-section/services-section.component'
 import CasesSection from '../src/components/cases-section/cases-section.component'
 import ClientsSection from '../src/components/clients-section/clients-section.component'
+import BlogSection from '../src/components/blog-section/blog-section.component'
 
+import 'swiper/swiper.scss'
 import './App.scss';
 
 function App() {
@@ -24,7 +26,11 @@ function App() {
         <LandingPage scrollLocation={scrollTop} />
         <ServicesSection />
         <CasesSection />
-        <ClientsSection />
+        {/* <ClientsSection /> */}
+        <div className='blog-title-container'>
+          <h1> BLOG </h1>
+        </div>
+        <BlogSection />
       </BrowserRouter>
     </div>
   );
