@@ -1,0 +1,13 @@
+.icon-instruction-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    font-size: 0.8em;
+
+    .icon-instruction {
+        width: 70px;
+        height: 70px;
+    }
+}

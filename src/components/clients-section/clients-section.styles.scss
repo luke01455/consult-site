@@ -1,0 +1,30 @@
+.clients-section-container{
+    height: 800px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    .clients-section-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .half-client-cards {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+            .quarter-client-cards {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+    }
+}

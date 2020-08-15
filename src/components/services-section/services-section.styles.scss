@@ -1,0 +1,30 @@
+.services-section-container {
+    margin-top: 50%;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .services-section-wrapper {
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    
+        .services-text {
+            width: 50%;
+        }
+    
+        .icons-container {
+            display: flex;
+            width: 65%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .services-cta-container {
+            z-index: 2;
+        }
+    }
+}

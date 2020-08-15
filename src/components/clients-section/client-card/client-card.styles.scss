@@ -1,0 +1,38 @@
+.client-card-container {
+    background-color: #f7f7f7;
+    height: 350px;
+    width: 350px;
+    display: grid;
+    place-items: center;
+
+    .client-picture-container {
+        display: grid;
+        place-items: center;
+        width: 50%;
+        height: 70%;
+        
+
+        .client-picture {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .client-name-container {
+        display: none;
+    }
+}
+
+.client-card-container:hover {
+    z-index: 2;
+    background-color: black;
+
+    .client-picture-container {
+        display: none;
+    }
+
+    .client-name-container {
+        color: white;
+        display: block;
+    }
+}

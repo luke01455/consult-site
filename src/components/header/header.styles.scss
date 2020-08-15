@@ -1,0 +1,121 @@
+.header {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 3;
+
+    @media (max-width: 700px) { 
+      position: absolute;
+    }
+
+    .logo-container {
+      margin-left: 10%;
+      height: 100%;
+      padding-top: 24px;
+      padding-left: 50px;
+      text-decoration: none;
+      color: black;
+
+      @media (max-width: 583px) { 
+        padding-top: 13px;
+      }
+
+      .header-logo {
+        font-size: 1.5em;
+        font-weight: 600;
+      }
+      
+    }
+    
+
+
+  
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 1.18em;
+      text-align: center;
+      margin-right: 10%;
+
+  
+
+      .option {
+        margin-top: 55px;
+        color: black;
+        text-decoration: none;
+        padding: 10px 15px;
+        width: 110px;
+        cursor: pointer;
+
+        @media (max-width: 900px) {
+          display: none;
+        }
+      }
+
+
+      .option:hover {
+        letter-spacing: 1px;
+        color: green;
+      }
+
+      .option:last-child {
+        margin-right: 55px;
+        width: 150px;
+      }
+    }
+
+
+  }
+
+
+  .burger-icon-container {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 2px;
+    padding-right: 77px;
+    cursor: pointer;
+
+    @media (min-width: 900px) {
+      display: none;
+    }
+
+    .burger-icon-img {
+      max-height: 95%;
+      max-width: 95%;
+      filter: invert(99%) sepia(1%) saturate(3207%) hue-rotate(50deg) brightness(100%) contrast(100%);
+    }
+
+    .burger-icon-img:hover {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  .header.green {
+    background-color: rgb(88,181,26);
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+  .option.green {
+    color: white !important;
+  }
+
+  .header-logo.green {
+    color: white !important;
+  }
+
+  .black {
+    position: fixed;
+    background: rgba(255,255,255,0.85);
+  }

@@ -1,0 +1,41 @@
+.cases-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    background-color: #f7f7f7;
+
+    .cases-cta-container {
+        z-index: 2;
+    }
+    
+    .cases-images {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        .left-images-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 60%;
+        }
+        .right-images-container {
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 40%;
+
+            .top-img-container {
+                max-height: 75%;
+            }
+            .bottom-img-container {
+                max-height: 40%;
+            }
+        }
+    }
+}
