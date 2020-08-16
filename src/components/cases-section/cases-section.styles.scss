@@ -16,12 +16,15 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 30px;
+
         .left-images-container {
             display: flex;
             align-items: center;
             flex-direction: column;
             width: 60%;
+            cursor: pointer;
         }
+
         .right-images-container {
             height: 500px;
             display: flex;
@@ -31,11 +34,23 @@
             width: 40%;
 
             .top-img-container {
+                cursor: pointer;
                 max-height: 75%;
             }
+
+            .text-section-top {
+                cursor: pointer;
+            }
+
             .bottom-img-container {
+                cursor: pointer;
                 max-height: 40%;
             }
+
+            .text-section-bottom {
+                cursor: pointer;
+            }
+
         }
     }
 }

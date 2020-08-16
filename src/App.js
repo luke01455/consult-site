@@ -1,36 +1,22 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
-import LandingPage from '../src/components/landing-page/landing-page.component'
-import ServicesSection from '../src/components/services-section/services-section.component'
-import CasesSection from '../src/components/cases-section/cases-section.component'
-import ClientsSection from '../src/components/clients-section/clients-section.component'
-import BlogSection from '../src/components/blog-section/blog-section.component'
+
+import HomePage from '../src/pages/homepage/homepage.component'
+import CasesPage from '../src/pages/cases-page/cases-page.component'
 
 import 'swiper/swiper.scss'
 import './App.scss';
 
 function App() {
-  const [scrollTop, setScrollTop] = useState(0);
 
-  const onScroll = (e) => {
-      setScrollTop(e.target.documentElement.scrollTop);
-  }
-
-  useEffect(() => {
-      window.addEventListener('scroll', onScroll);
-  }, []);
-  
   return (
     <div className="App">
       <BrowserRouter>
-        <LandingPage scrollLocation={scrollTop} />
-        <ServicesSection />
-        <CasesSection />
-        {/* <ClientsSection /> */}
-        <div className='blog-title-container'>
-          <h1> BLOG </h1>
-        </div>
-        <BlogSection />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/cases" component={CasesPage} />
+        </Switch>
       </BrowserRouter>
     </div>
   );

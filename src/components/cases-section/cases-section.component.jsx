@@ -19,19 +19,17 @@ const CasesSection = () => {
                 </div>
                 <div className='right-images-container'>
                     <img className='top-img-container' src={sideImg1} />
-                    <div className='text-section'>
+                    <div className='text-section-top'>
                         <h4>OK Perinta</h4>
                         <p>A new strategy and brand update made OK Perintä a market forerunner</p>
                     </div>
 
                     <img className='bottom-img-container' src={sideImg2} />
-                    <div className='text-section'>
+                    <div className='text-section-bottom'>
                         <h4>Mr. Panini</h4>
                         <p>A hugely successful product launch in social media</p>
                     </div>
-
                 </div>
-                
             </div>
             <div className='cases-cta-container'>
             <CTAButton content='See More' />

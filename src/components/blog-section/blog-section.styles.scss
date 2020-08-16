@@ -6,12 +6,31 @@
     flex-direction: column;
     width: 400px;
     height: 650px;
+    cursor: pointer;
 
     .blog-img {
         display: block;
         max-height: fill-available;
         max-width: 75%;
         max-height: 75%;
+    }
+
+    .blog-text-container {
+        height: 40%;
+        padding: 20px;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+    }
+    .blog-text-container p {
+        text-align: left;
+    }
+    .blog-text-container h1 {
+        text-align: left;
+    }
+    .blog-text-container a {
+        text-align: left;
+        text-decoration: underline;
     }
 }
 

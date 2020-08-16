@@ -24,11 +24,11 @@ const Header = ({scrollLocation}) => {
                 <h1 className={`header-logo`}> CONSULT NAME </h1>
             </Link>
             <div className={`options`}>
-                <div className={`option`} to='/shop'> Services </div>
-                <div className={`option`} to='/shop'> Cases </div>
-                <div className={`option`} to='/shop'> Crew </div>
-                <div className={`option`} to='/shop'> Blog </div>
-                <div className={`option`} to='/shop'> Contact Us </div>
+                <Link className={`option`} to='/shop'> Services </Link>
+                <Link className={`option`} to='/cases'> Cases </Link>
+                <Link className={`option`} to='/shop'> Crew </Link>
+                <Link className={`option`} to='/shop'> Blog </Link>
+                <Link className={`option`} to='/shop'> Contact Us </Link>
             </div>
         </div>
     )
