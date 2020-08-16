@@ -16,7 +16,6 @@ const ServicesCard = ({ name, title, number, email, imgLoc }) => {
                     <p>{email}</p>
                     <img />
                 </div>
-
             </div>
         </div>
     )

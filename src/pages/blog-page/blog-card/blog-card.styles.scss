@@ -1,0 +1,23 @@
+.blog-card-container {
+    width: 25%;
+    margin: 10px 45px;
+    .blog-card-wrapper {
+        .blog-card-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .blog-picture {
+                max-height: 350px;
+                max-width: 350px;
+            }
+        }
+
+        .blog-card-bottom-text {
+            padding: 25px;
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

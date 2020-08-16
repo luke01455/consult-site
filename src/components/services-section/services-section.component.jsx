@@ -14,15 +14,18 @@ const ServicesSection = () => {
                         test and make sure that everything we do really works.</p>
                 </div>
                 <div className='icons-container'>
+                    <div className='icons-container-half'>
                     <ServicesIcon iconNumber={3} iconContent='Growth Marketing Strategy'/>
                     <ServicesIcon iconNumber={2} iconContent='Growth Hacking'/>
+                    </div>
+                    <div className='icons-container-half'>
                     <ServicesIcon iconNumber={1} iconContent='Design and Copywriting'/>
                     <ServicesIcon iconNumber={4} iconContent='Web Design'/>
+                    </div>
                 </div>
                 <div className='services-cta-container'>
                     <CTAButton width='wider' content='Have a look at our services!'/>
                 </div>
-                
             </div>
         </div>
     )

@@ -1,11 +1,14 @@
 .services-section-container {
-    margin-top: 50%;
+    margin-top: 850px;
     height: 800px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     
+    @media (max-width: 1600px) { 
+        margin-right: 70%;
+        }
 
     .services-section-wrapper {
         height: 75%;
@@ -24,6 +27,17 @@
             width: 65%;
             justify-content: space-around;
             align-items: center;
+
+            .icons-container-half {
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+
+                @media (max-width: 950px) { 
+                    flex-direction: column;
+                    }
+            }
         }
 
         .services-cta-container {

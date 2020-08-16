@@ -5,6 +5,25 @@
     display: grid;
     place-items: center;
 
+                @media (max-width: 1500px) { 
+                    height: 250px;
+                    width: 250px;
+                }
+
+                
+                @media (max-width: 1040px) { 
+                    height: 150px;
+                    width: 150px;
+                }
+
+                @media (max-width: 850px) { 
+                    margin: 10px 0;
+                }
+
+                @media (max-width: 500px) {
+                    margin: 10px 10px;
+                }
+
     .client-picture-container {
         display: grid;
         place-items: center;

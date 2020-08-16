@@ -13,28 +13,32 @@ const CasesSection = () => {
             <h1> CASES </h1>
             <div className='cases-images'>
                 <div className='left-images-container'>
-                    <img src={mainImg} />
+                    <img className='left-img-container' src={mainImg} />
                     <h4>Snellman</h4>
                     <p>Productive collaboration since 2010</p>
                 </div>
                 <div className='right-images-container'>
-                    <img className='top-img-container' src={sideImg1} />
-                    <div className='text-section-top'>
-                        <h4>OK Perinta</h4>
-                        <p>A new strategy and brand update made OK Perintä a market forerunner</p>
+                    <div className='right-image-container-top'>
+                        <img className='top-img-container' src={sideImg1} />
+                        <div className='text-section-top'>
+                            <h4>OK Perinta</h4>
+                            <p>A new strategy and brand update made OK Perintä a market forerunner</p>
+                        </div>
+                    </div>
+                    <div className='right-image-container-bottom'>
+                        <img className='bottom-img-container' src={sideImg2} />
+                        <div className='text-section-bottom'>
+                            <h4>Mr. Panini</h4>
+                            <p>A hugely successful product launch in social media</p>
+                        </div>
                     </div>
 
-                    <img className='bottom-img-container' src={sideImg2} />
-                    <div className='text-section-bottom'>
-                        <h4>Mr. Panini</h4>
-                        <p>A hugely successful product launch in social media</p>
-                    </div>
                 </div>
             </div>
             <div className='cases-cta-container'>
-            <CTAButton toLoc='/cases' content='See More' />
+                <CTAButton toLoc='/cases' content='See More' />
             </div>
-            
+
         </div>
     )
 

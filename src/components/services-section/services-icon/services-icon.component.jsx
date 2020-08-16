@@ -11,7 +11,10 @@ const ServicesIcon = ({ iconNumber, iconContent }) => {
     return (
         <div className='icon-instruction-wrapper'>
             <div className='icon-instruction'> {iconNumber === 1 ? <ReactLogo1 /> : iconNumber === 2 ? <ReactLogo2 />: iconNumber === 3 ? <ReactLogo3 /> : <ReactLogo4 />} </div>
-            <h2>{iconContent}</h2>
+            <div className='service-icon-text'>
+                <h2 >{iconContent}</h2>
+            </div>
+           
         </div>
     )
 }
