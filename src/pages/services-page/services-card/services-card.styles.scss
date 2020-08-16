@@ -1,0 +1,32 @@
+.services-card-container {
+    height: auto;
+    width: 80%;
+    min-height: 250px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    
+
+    .services-card-wrapper {
+        padding: 20px;
+        font-size: 1.3em;
+
+        .title-img-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            h2 {
+                margin-left: 10px;
+            }
+
+            .service-picture {
+                width: 65px;
+                height: 65px;
+            }
+        }
+    }
+
+    .service-button-container {
+        margin: 0 0 25px 25px;
+    }
+}

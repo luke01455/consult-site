@@ -1,0 +1,16 @@
+.squad-card-container {
+    width: 25%;
+    .squad-card-wrapper {
+        .squad-card-image {
+            .squad-picture {
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        .squad-card-bottom-text {
+            padding: 35px;
+            background-color: #f7f7f7;
+        }
+    }
+}
