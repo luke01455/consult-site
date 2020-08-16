@@ -1,5 +1,5 @@
 .cases-wrapper {
-    height: 100vh;
+    height: 1850px;
     width: 100%;
     .cases-header {
         display: flex;
@@ -10,6 +10,81 @@
 
         h1 {
             font-size: 2.2em;
+        }
+
+        .lower-cases-container{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 50px;
+            height: 550px;
+
+            .lower-case {
+                 height: 450px;
+                .low-img-container {
+                    cursor: pointer;
+                    max-height: 75%;
+                }
+            }
+
+        }
+    }
+    .cases-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 100px;
+        .cases-cta-container {
+            z-index: 2;
+        }
+        
+        .cases-images {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+    
+            .left-images-container {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 60%;
+                cursor: pointer;
+            }
+    
+            .right-images-container {
+                height: 500px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 40%;
+    
+                .top-img-container {
+                    cursor: pointer;
+                    max-height: 75%;
+                }
+    
+                .text-section-top {
+                    cursor: pointer;
+                }
+    
+                .bottom-img-container {
+                    cursor: pointer;
+                    max-height: 40%;
+                }
+    
+                .text-section-bottom {
+                    cursor: pointer;
+                }
+    
+            }
         }
     }
 }

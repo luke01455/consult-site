@@ -32,7 +32,7 @@ const CasesSection = () => {
                 </div>
             </div>
             <div className='cases-cta-container'>
-            <CTAButton content='See More' />
+            <CTAButton toLoc='/cases' content='See More' />
             </div>
             
         </div>

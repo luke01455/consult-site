@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './cta-button.styles.scss';
 
-const CtaButton = ({content, width}) => {
+const CtaButton = ({content, width, toLoc}) => {
     return (
-        <div className={`cta-button ${width}`}>
+        <Link to={toLoc} className={`cta-button ${width}`}>
             {content}
-        </div>
+        </Link>
     )
 }
 export default CtaButton;
