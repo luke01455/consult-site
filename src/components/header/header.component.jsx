@@ -5,7 +5,6 @@ import './header.styles.scss';
 const Header = ({scrollLocation}) => {
     const [headerColour, setHeaderColour] = useState('white')
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    console.log(scrollLocation)
     useEffect(() => {
         // if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/index.html" || window.location.pathname === "/index"){
 
