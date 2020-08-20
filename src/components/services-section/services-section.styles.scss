@@ -10,6 +10,10 @@
         margin-right: 70%;
         }
 
+        @media (max-width: 500px) { 
+            height: 1400px;
+            }
+
     .services-section-wrapper {
         height: 75%;
         display: flex;
@@ -20,6 +24,11 @@
         .services-text {
             text-align: center;
             width: 50%;
+
+            
+    @media (max-width: 1000px) { 
+        width: 75%;
+        }
         }
     
         .icons-container {
@@ -27,6 +36,10 @@
             width: 65%;
             justify-content: space-around;
             align-items: center;
+
+            @media (max-width: 500px) { 
+                flex-direction: column;
+                }
 
             .icons-container-half {
                 display: flex;

@@ -9,39 +9,87 @@
     text-align: left;
 
     .footer-wrapper {
-        width: 80%;
+        width: 90%;
         height: 70%;
         display: flex;
         justify-content: space-around;
 
-        .footer-title-container {
-            width: 20%;
-        }
+        @media (max-width: 1200px) { 
+            flex-direction: column;
+            }
 
-        .footer-address-container {
-            width: 15%;
-        }
+        .left-footer-container {
+            display: flex;
+            justify-content: space-around;
+            width: 60%; 
 
-        .footer-terms-container {
-            width: 15%;
+            @media (max-width: 1200px) { 
+                width: 100%;
+                }
 
-            a {
-                cursor: pointer;
-                text-decoration: underline;
+            @media (max-width: 800px) { 
+                flex-direction: column;
+                }
+                
+
+            .footer-title-container {
+                width: 50%;
+                
+                @media (max-width: 800px) { 
+                    width: 100%;
+                    text-align: center;
+                    }
+            }
+
+            .footer-text-columns {
+                display: flex;
+                justify-content: space-around;
+                width: 60%;
+                @media (max-width: 800px) { 
+                    width: 100%;
+                    }
+
+                .footer-address-container {
+                    margin-left: 25px;
+                    width: 55%;
+                }
+        
+                .footer-terms-container {
+                    width: 40%;
+            }
+    
+
+    
+                a {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
             }
         }
+
+
 
         .footer-newsletter-container {
             height: 75%;
             width: 38%;
-
+            margin-left: 35px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+
+            @media (max-width: 800px) { 
+                width: 100%;
+                margin-left: 0px;
+                }
         }
 
         .footer-strong-text {
             font-weight: 1000;
+
+            @media (max-width: 500px) { 
+                display: none;
+                }
         }
 
         .icons-container {
@@ -51,6 +99,10 @@
             margin-left: auto;
             width: 50%;
             
+            @media (max-width: 800px) { 
+                margin-top: 20px;
+                }
+
 
             .svg-container {
                 cursor: pointer;

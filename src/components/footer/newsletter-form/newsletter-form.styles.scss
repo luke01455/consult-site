@@ -1,4 +1,8 @@
 .newsletter-form-container {
+
+  @media (max-width: 500px) { 
+    display: none;
+    }
   body {
     background: #F8A434;
     font-family: 'Lato', sans-serif;
