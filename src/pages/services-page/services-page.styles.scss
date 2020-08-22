@@ -9,7 +9,24 @@
         flex-direction: column;
         padding-top: 15vh;
         width: 100%;
-    
+
+        @media (max-width: 1400px) { 
+            height: 2000px;
+            }
+
+        @media (max-width: 1200px) { 
+            height: 2700px;
+            }
+
+            @media (max-width: 800px) { 
+                height: 3200px;
+                }
+
+                @media (max-width: 600px) { 
+                    height: 3800px;
+                    }
+
+
         .services-text-wrapper {
             text-align: center;
             width: 60%;
@@ -30,6 +47,10 @@
         justify-content: space-around;
         align-items: center;
         margin-bottom: 100px;
+
+        @media (max-width: 1200px) { 
+            flex-direction: column;
+            }
 
         .services-card-half {
             height: auto;

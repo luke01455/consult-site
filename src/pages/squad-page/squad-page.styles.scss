@@ -10,6 +10,10 @@
         padding-top: 15vh;
         width: 100%;
 
+        @media (max-width: 1250px) { 
+            height: 1600px;
+            }
+
         .squad-text-wrapper {
             text-align: center;
             width: 60%;
@@ -29,6 +33,19 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            .squad-card-container-half {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                @media (max-width: 1250px) { 
+                    flex-direction: column;
+                    margin-top: 25px;
+                    }
+            
+            }
         }
     }
 }

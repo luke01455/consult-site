@@ -27,7 +27,7 @@ const Header = ({scrollLocation}) => {
                 <Link className={`option`} to='/cases'> Cases </Link>
                 <Link className={`option`} to='/squad'> Squad </Link>
                 <Link className={`option`} to='/blog'> Blog </Link>
-                <Link className={`option`} to='/contact'> Contact Us </Link>
+                <Link className={`option`} to='/contact'> Contact </Link>
             </div>
         </div>
     )

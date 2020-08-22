@@ -25,14 +25,18 @@ const SquadPage = () => {
                         copywriters and web developers. Our combined skills and expertise are guaranteed to grow your company and improve your sales figures!</p>
                 </div>
                 <div className='squad-card-container'>
-                    <SquadCard name='Sebastian Östman' title='COO and Co-founder' 
-                     number='+358 50 308 4196' email='sebastian@genero.fi' imgLoc='sebastian-ostman-4-520x540-c-default'/>
-                    <SquadCard name='Rasmus Östman' title='CEO and Co-founder'
-                     number='+358 40 742 9523' email='rasmus@genero.fi' imgLoc='rasmus-ostman-4-520x540-c-default'/>
-                    <SquadCard name='Jonathan Björkskog' title='Co-founder and Director'
-                     number='+358 50 539 4288' email='jonathan@genero.fi' imgLoc='jonathan-bjorkskog-5-520x540-c-default'/>
-                    <SquadCard name='Christopher Oksman' title='Country Manager Sweden'
-                     number='+358 40 736 0733' email='christopher@genero.fi' imgLoc='christopher-oksman-5-520x540-c-default'/>
+                    <div className='squad-card-container-half'>
+                        <SquadCard name='Sebastian Östman' title='COO and Co-founder' 
+                        number='+358 50 308 4196' email='sebastian@genero.fi' imgLoc='sebastian-ostman-4-520x540-c-default'/>
+                        <SquadCard name='Rasmus Östman' title='CEO and Co-founder'
+                        number='+358 40 742 9523' email='rasmus@genero.fi' imgLoc='rasmus-ostman-4-520x540-c-default'/>
+                    </div>
+                    <div className='squad-card-container-half'>
+                        <SquadCard name='Jonathan Björkskog' title='Co-founder and Director'
+                        number='+358 50 539 4288' email='jonathan@genero.fi' imgLoc='jonathan-bjorkskog-5-520x540-c-default'/>
+                        <SquadCard name='Christopher Oksman' title='Country Manager Sweden'
+                        number='+358 40 736 0733' email='christopher@genero.fi' imgLoc='christopher-oksman-5-520x540-c-default'/>
+                    </div>
                 </div>
             </div>
             <Footer />
