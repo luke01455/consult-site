@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
+import MenuButton from '../menu-button/menu-button.component'
+import MenuModal from '../menu-modal/menu-modal.component'
 import './header.styles.scss';
 
 const Header = ({scrollLocation}) => {
     const [headerColour, setHeaderColour] = useState('white')
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    const [isHidden, setIsHidden] = useState(true)
+
+
+    const setHidden = () => {
+        setIsHidden(!isHidden)
+        console.log(isHidden)
+    }
+
     useEffect(() => {
         // if(window.location.pathname.length == 1 || window.location.pathname.length == 0 || window.location.pathname === "/index.html" || window.location.pathname === "/index"){
 
@@ -29,6 +38,8 @@ const Header = ({scrollLocation}) => {
                 <Link className={`option`} to='/blog'> Blog </Link>
                 <Link className={`option`} to='/contact'> Contact </Link>
             </div>
+            <div onClick={() => setHidden()} className='burger-icon-container'><MenuButton hidden={isHidden} /></div>
+            <MenuModal hidden={isHidden}/>
         </div>
     )
 

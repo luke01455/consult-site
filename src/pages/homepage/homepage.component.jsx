@@ -39,7 +39,7 @@ function HomePage() {
           <div className='blog-title-container'>
             <h1> BLOG </h1>
           </div>
-          {mediaQ.matches ? <SquadSwiper /> : <BlogSectionDesk />}
+          {mediaQ.matches ? <BlogSectionMob /> : <BlogSectionDesk />}
           
           <div className='blog-cta-container'>
             <CTAButton content='See more' />

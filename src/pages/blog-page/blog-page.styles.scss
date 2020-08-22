@@ -11,7 +11,8 @@
         width: 100%;
 
         @media (max-width: 1280px) { 
-            height: 350px;
+            height: 450px;
+            text-align: center;
             }
 
         .blog-text-wrapper {
@@ -25,6 +26,7 @@
         h1 {
             font-size: 2.5em;
             text-decoration: underline;
+            padding: 15px;
         }
 
 

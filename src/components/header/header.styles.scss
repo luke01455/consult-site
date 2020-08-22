@@ -57,7 +57,7 @@
         width: 110px;
         cursor: pointer;
 
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
           display: none;
         }
       }
@@ -79,10 +79,11 @@
 
 
   .burger-icon-container {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 2px;
-    padding-right: 77px;
+    width: 65px;
+    height: 65px;
+    padding-top: 20px;
+    margin-right: 80px;
+    z-index: 6;
     cursor: pointer;
 
     @media (min-width: 900px) {
