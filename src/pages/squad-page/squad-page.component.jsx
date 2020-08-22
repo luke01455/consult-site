@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/header/header.component'
 import SquadCard from '../../components/squad-card/squad-card.component'
+import SquadSwiper from '../../components/squad-swiper/squad-swiper.component'
 import Footer from '../../components/footer/footer.component'
 import './squad-page.styles.scss';
 
 const SquadPage = () => {
     const [scrollTop, setScrollTop] = useState(0);
-
+    const [mediaQ, setMediaQ] = useState(0);
+  
     const onScroll = (e) => {
-        setScrollTop(e.target.documentElement.scrollTop);
+      setScrollTop(e.target.documentElement.scrollTop);
     }
-
+    
     useEffect(() => {
-        window.addEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll)
+      setMediaQ(window.matchMedia("(max-width: 750px)"))
     }, []);
     return (
         <div className='squad-page-container'>
@@ -38,7 +41,9 @@ const SquadPage = () => {
                         number='+358 40 736 0733' email='christopher@genero.fi' imgLoc='christopher-oksman-5-520x540-c-default'/>
                     </div>
                 </div>
+                
             </div>
+            {mediaQ.matches ? <SquadSwiper /> : <div></div>}
             <Footer />
         </div>
     )

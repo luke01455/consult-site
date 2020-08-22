@@ -1,0 +1,30 @@
+.cases-swiper-card-container1 {
+
+    @media (max-width: 1250px) { 
+        margin-top: 25px;
+        }
+
+        background-color: white;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .cases-swiper-card-wrapper1 {
+
+        width: 55%;
+        .cases-swiper-card-image1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .cases-swiper-picture1 {
+                height: 300px;
+                width: 300px;
+            }
+        }
+
+        .cases-swiper-card-bottom-text1 {
+            padding: 35px;
+            background-color: #fff;
+        }
+    }
+}

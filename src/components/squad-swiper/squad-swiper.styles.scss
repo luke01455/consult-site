@@ -1,22 +1,28 @@
-.squad-card-container {
-    // width: 60%;
+.squad-card-container1 {
 
     @media (max-width: 1250px) { 
         margin-top: 25px;
         }
 
-    .squad-card-wrapper {
-        .squad-card-image {
+        background-color: white;
+        width: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    .squad-card-wrapper1 {
+
+        width: 55%;
+        .squad-card-image1 {
             display: flex;
             align-items: center;
             justify-content: center;
-            .squad-picture {
+            .squad-picture1 {
                 height: 300px;
                 width: 300px;
             }
         }
 
-        .squad-card-bottom-text {
+        .squad-card-bottom-text1 {
             padding: 35px;
             background-color: #f7f7f7;
         }

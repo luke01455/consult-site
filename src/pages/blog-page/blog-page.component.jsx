@@ -2,17 +2,23 @@ import React, { useState, useEffect } from 'react';
 import Header from '../../components/header/header.component'
 import BlogCard from './blog-card/blog-card.component'
 import Footer from '../../components/footer/footer.component'
+import BlogSectionDesk from '../../components/blog-section/blog-section-desk.component'
+import BlogSectionMob from '../../components/blog-section/blog-section-mob.component'
 import './blog-page.styles.scss';
 
 const BlogPage = () => {
     const [scrollTop, setScrollTop] = useState(0);
-
+    const [mediaQ, setMediaQ] = useState(0);
+    const [mediaMidQ, setMediaMidQ] = useState(0);
+  
     const onScroll = (e) => {
-        setScrollTop(e.target.documentElement.scrollTop);
+      setScrollTop(e.target.documentElement.scrollTop);
     }
-
+    
     useEffect(() => {
-        window.addEventListener('scroll', onScroll);
+      window.addEventListener('scroll', onScroll)
+      setMediaQ(window.matchMedia("(max-width: 1100px)"))
+      setMediaMidQ(window.matchMedia("(max-width: 1280px)"))
     }, []);
     return (
         <div className='blog-page-container'>
@@ -52,6 +58,7 @@ const BlogPage = () => {
                         imgLoc='tutustu-uuteen-toimistoomme-tukholmassa-730x592-c-default' />
                 </div>
             </div>
+            {mediaQ.matches ? <BlogSectionMob /> : mediaMidQ.matches ? <BlogSectionDesk/> : <div></div>}
             <Footer />
         </div>
     )

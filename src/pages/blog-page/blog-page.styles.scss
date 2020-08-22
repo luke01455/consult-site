@@ -10,6 +10,10 @@
         padding-top: 130px;;
         width: 100%;
 
+        @media (max-width: 1280px) { 
+            height: 350px;
+            }
+
         .blog-text-wrapper {
             text-align: center;
             width: 60%;
@@ -29,6 +33,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
+
+            @media (max-width: 1280px) { 
+                display: none;
+                }
         }
     }
 }

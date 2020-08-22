@@ -9,6 +9,7 @@ import BlogSectionMob from '../../components/blog-section/blog-section-mob.compo
 import BlogSectionDesk from '../../components/blog-section/blog-section-desk.component'
 import CTAButton from '../../components/cta-button/cta-button.component'
 import Footer from '../../components/footer/footer.component'
+import SquadSwiper from '../../components/squad-swiper/squad-swiper.component'
 
 import 'swiper/swiper.scss'
 import './homepage.styles.scss';
@@ -38,7 +39,7 @@ function HomePage() {
           <div className='blog-title-container'>
             <h1> BLOG </h1>
           </div>
-          {mediaQ.matches ? <BlogSectionMob /> : <BlogSectionDesk />}
+          {mediaQ.matches ? <SquadSwiper /> : <BlogSectionDesk />}
           
           <div className='blog-cta-container'>
             <CTAButton content='See more' />

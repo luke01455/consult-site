@@ -1,6 +1,11 @@
 .cases-wrapper {
     height: 1850px;
     width: 100%;
+
+    @media (max-width: 1400px) { 
+        height: 500px;
+        }
+
     .cases-header {
         display: flex;
         align-items: center;
@@ -8,11 +13,20 @@
         flex-direction: column;
         padding-top: 23vh;
 
+        p {
+            padding: 0 40px;
+        }
+
         h1 {
             font-size: 2.2em;
         }
 
         .lower-cases-container{
+
+            @media (max-width: 1400px) { 
+                display: none;
+                }
+
             width: 80%;
             display: flex;
             justify-content: space-around;
@@ -31,6 +45,11 @@
         }
     }
     .cases-section-container {
+
+        @media (max-width: 1400px) { 
+            display: none;
+            }
+
         display: flex;
         flex-direction: column;
         align-items: center;
