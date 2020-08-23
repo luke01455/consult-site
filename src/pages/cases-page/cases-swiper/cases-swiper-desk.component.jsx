@@ -15,7 +15,7 @@ const CasesSwiperMob = () => {
     }
     return (        
     <Swiper {...params}>
-        <div className='cases-swiper-card-container1'>
+     <div className='cases-swiper-card-container1'>
             <div className='cases-swiper-card-wrapper1'>
                 <div className='cases-swiper-card-image1'>
                 <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'snellman-tuloksellista-yhteistyota-jo-vuodesta-2010-7-800x650-c-default' + '.jpg')}/>
@@ -29,7 +29,7 @@ const CasesSwiperMob = () => {
         <div className='cases-swiper-card-container1'>
             <div className='cases-swiper-card-wrapper1'>
                 <div className='cases-swiper-card-image1'>
-                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'snellman-tuloksellista-yhteistyota-jo-vuodesta-2010-7-800x650-c-default' + '.jpg')}/>
+                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'ok-perinta-growth-marketing-strategialla-alansa-suunnannayttajaksi-3-800x650-c-default' + '.jpg')}/>
                 </div>
                 <div className='cases-swiper-card-bottom-text1'>
                     <h4>OK Perinta</h4>
@@ -40,7 +40,7 @@ const CasesSwiperMob = () => {
         <div className='cases-swiper-card-container1'>
             <div className='cases-swiper-card-wrapper1'>
                 <div className='cases-swiper-card-image1'>
-                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'snellman-tuloksellista-yhteistyota-jo-vuodesta-2010-7-800x650-c-default' + '.jpg')}/>
+                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'mr-panini-using-social-media-to-launch-a-vegan-panini-800x308-c-default' + '.jpg')}/>
                 </div>
                 <div className='cases-swiper-card-bottom-text1'>
                     <h4>Mr. Panini</h4>
@@ -51,7 +51,7 @@ const CasesSwiperMob = () => {
         <div className='cases-swiper-card-container1'>
             <div className='cases-swiper-card-wrapper1'>
                 <div className='cases-swiper-card-image1'>
-                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'snellman-tuloksellista-yhteistyota-jo-vuodesta-2010-7-800x650-c-default' + '.jpg')}/>
+                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'mush-website-making-raw-dog-food-accessible-2-800x0-c-default' + '.jpg')}/>
                 </div>
                 <div className='cases-swiper-card-bottom-text1'>
                     <h4>MUSH</h4>
@@ -62,7 +62,7 @@ const CasesSwiperMob = () => {
         <div className='cases-swiper-card-container1'>
             <div className='cases-swiper-card-wrapper1'>
                 <div className='cases-swiper-card-image1'>
-                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'snellman-tuloksellista-yhteistyota-jo-vuodesta-2010-7-800x650-c-default' + '.jpg')}/>
+                <img className='cases-swiper-picture1' src={require('../../../assetts/' + 'mb-mobile-new-leads-generating-webpage-4-800x0-c-default' + '.jpg')}/>
                 </div>
                 <div className='cases-swiper-card-bottom-text1'>
                     <h4>MB-Mobile</h4>

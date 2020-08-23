@@ -23,10 +23,10 @@ const menuModalToggle = () => {
         <Link className="menu-link" onClick={() => menuModalToggle()} to="/cases">
           Cases
         </Link>
-        <Link className="menu-link" onClick={() => menuModalToggle()} to="blog">
+        <Link className="menu-link" onClick={() => menuModalToggle()} to="/squad">
           Squad
         </Link>
-        <Link className="menu-link" onClick={() => menuModalToggle()} to="/squad">
+        <Link className="menu-link" onClick={() => menuModalToggle()} to="/blog">
           Blog
         </Link>
         <Link className="menu-link" onClick={() => menuModalToggle()} to="/contact">
